@@ -17,7 +17,7 @@ const Post = ({
 }) => {
     const router = useRouter();
     const onDetail = () => {
-        router.push(`/post/${post.id}`);
+        router.push(`/posts/${post.id}`);
     };
     return (
         <div className="border bg-gray-500 w-full p-4 rounded flex justify-between" key={idx}>
