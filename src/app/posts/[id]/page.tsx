@@ -4,7 +4,7 @@ import { addComment, deleteComment } from "@/src/app/_actions/actions";
 import AddComment from "@/src/components/AddComment";
 
 import React from "react";
-import { Schema } from "aws-amplify/datastore";
+import { Schema } from "@/amplify/data/resource";
 
 const Posts = async ({ params }: { params: { id: string } }) => {
   if (!params.id) return null;
@@ -36,6 +36,7 @@ const Posts = async ({ params }: { params: { id: string } }) => {
         <h2>Title: {post.title}</h2>
       </div>
 
+
       {isSignedIn ? (
         <AddComment
           addComment={addComment}
@@ -54,7 +55,7 @@ const Posts = async ({ params }: { params: { id: string } }) => {
             <form
               action={async (formData) => {
                 "use server";
-                await deleteComment(formData)
+                await deleteComment(formData);
                 revalidatePath(`/posts/${params.id}`);
               }}
             >

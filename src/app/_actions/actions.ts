@@ -22,7 +22,7 @@ export async function addComment(
 ){
     if(content.trim().length===0) return;
     const {data:comment} = await cookieBasedClient.models.Comment.create({
-        post,
+        postId: post.id,
         content
     })
     console.log("got comment",comment);

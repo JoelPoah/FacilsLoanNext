@@ -44,20 +44,26 @@ specifies that any user authenticated via an API key can "create", "read",
 // })
 
 const schema = a.schema({
-  Comment : a.model({
-    content: a.string().required(),
-    postId: a.id(),
-    post: a.belongsTo("Post","postId"),
-  }).authorization(allow=>[allow.publicApiKey().to(["read"]),
-  allow.owner()]),
-  Post : a.model({
-    title: a.string().required(),
-    comments: a.hasMany("Comment","postId"),
-  }).authorization(allow=>[allow.publicApiKey().to(["read"]),
-  allow.owner()]),
-  
-})
-
+  Comment: a
+    .model({
+      content: a.string().required(),
+      postId: a.id(),
+      post: a.belongsTo("Post", "postId"),
+    })
+    .authorization((allow) => [
+      allow.publicApiKey().to(["read"]),
+      allow.owner(),
+    ]),
+  Post: a
+    .model({
+      title: a.string().required(),
+      comments: a.hasMany("Comment", "postId"),
+    })
+    .authorization((allow) => [
+      allow.publicApiKey().to(["read"]),
+      allow.owner(),
+    ]),
+});
 
 // const schema = a.schema({
 //   Post: a

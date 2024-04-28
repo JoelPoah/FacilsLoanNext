@@ -18,7 +18,7 @@ export default async function Home() {
       <h1 className="text-xl  m-auto">List of all titles</h1>
       {posts?.map(async (post, idx) => (
 
-      <Post idx={idx} onDelete={deletePost} post={post} isSignedIn={ await isAuthenticated()}/>
+      <Post key={idx} idx={idx} onDelete={deletePost} post={post} isSignedIn={ await isAuthenticated()}/>
 
       ))}
     </main>
