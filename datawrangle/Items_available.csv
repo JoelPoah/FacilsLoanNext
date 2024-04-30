@@ -1,0 +1,98 @@
+item_ID,Name,category,description
+1,"801 MM Kit",Visual,NULL
+2,"801 Audio Kit",Audio,NULL
+3,"802 MM Kit",Visual,NULL
+4,"802 Audio Kit",Audio,NULL
+5,"HopeKids Ipad 1",Hopekids,NULL
+6,"Type C HDMI 1",Peripheral,NULL
+7,"Type C HDMI 2",Peripheral,NULL
+8,Walkie-1,"Walkie Talkie",NULL
+9,Walkie-2,"Walkie Talkie",NULL
+10,Walkie-3,"Walkie Talkie",NULL
+11,Walkie-4,"Walkie Talkie",NULL
+12,Walkie-5,"Walkie Talkie",NULL
+13,Walkie-6,"Walkie Talkie",NULL
+14,Walkie-7,"Walkie Talkie",NULL
+15,Walkie-8,"Walkie Talkie",NULL
+16,Walkie-9,"Walkie Talkie",NULL
+17,Walkie-10,"Walkie Talkie",NULL
+18,Walkie-11,"Walkie Talkie",NULL
+19,Walkie-12,"Walkie Talkie",NULL
+20,Walkie-13,"Walkie Talkie",NULL
+21,Walkie-14,"Walkie Talkie",NULL
+22,Walkie-15,"Walkie Talkie",NULL
+23,Walkie-16,"Walkie Talkie",NULL
+24,Walkie-17,"Walkie Talkie",NULL
+25,Walkie-18,"Walkie Talkie",NULL
+26,Walkie-19,"Walkie Talkie",NULL
+27,Walkie-20,"Walkie Talkie",NULL
+28,Walkie-21,"Walkie Talkie",NULL
+29,Walkie-22,"Walkie Talkie",NULL
+30,Walkie-23,"Walkie Talkie",NULL
+31,Walkie-24,"Walkie Talkie",NULL
+32,Walkie-25,"Walkie Talkie",NULL
+33,Walkie-26,"Walkie Talkie",NULL
+34,Walkie-27,"Walkie Talkie",NULL
+35,Walkie-28,"Walkie Talkie",NULL
+36,Walkie-29,"Walkie Talkie",NULL
+37,Walkie-30,"Walkie Talkie",NULL
+38,"Deposit Room Key",Key-closet2-1,NULL
+39,"Comm Key",Key-closet2-2,NULL
+40,"Entrance TV Key",Key-closet2-3,NULL
+41,"Foyer 1 Key",Key-closet2-4,NULL
+42,"Foyer 2 Key",Key-closet2-5,NULL
+43,"Foyer 3 Key",Key-closet2-6,NULL
+44,"Empty Key 1",Key-closet2-7,NULL
+45,"Empty Key 2",Key-closet2-8,NULL
+46,"Kids Ark Key",Key-closet2-9,NULL
+47,"Empty Key 3",Key-closet2-10,NULL
+48,"Hope Kids Key",Key-closet2-11,NULL
+49,"Hope Kids Filipino Key",Key-closet2-12,NULL
+50,"Hope Kids Bilingual Key",Key-closet2-13,NULL
+51,"Hope Kids Stationery Key",Key-closet2-14,NULL
+52,"HK Check In 01 Key",Key-closet2-15,NULL
+53,"Usher Key",Key-closet2-16,NULL
+54,"Shine Cabinet Key",Key-closet2-17,NULL
+55,"Shine Key",Key-closet2-18,NULL
+56,"Dialect Key",Key-closet2-19,NULL
+57,"Prayer Cabinet Key",Key-closet2-20,NULL
+58,"Finance RM Key",Key-closet2-21,NULL
+59,"Facilities Cabinet 1 Key",Key-closet2-22,NULL
+60,"Facilities Cabinet 2 Key",Key-closet2-23,NULL
+61,"Level 1 TV Key",Key-closet2-24,NULL
+62,"KG CCTV Key",Key-closet2-25,NULL
+63,"West Keys",Key-closet2-26,NULL
+64,"Empty Key 4",Key-closet2-27,NULL
+65,"Empty Key 5",Key-closet2-28,NULL
+66,"Empty Key 6",Key-closet2-29,NULL
+67,"Empty Key 7",Key-closet2-30,NULL
+68,"In Ear Monitor 801","In Ear Monitor",NULL
+69,"In Ear Monitor 802","In Ear Monitor",NULL
+70,"In Ear Monitor 806","In Ear Monitor",NULL
+71,"Whiteboard Marker 801","Whiteboard Marker",NULL
+72,"Whiteboard Marker 802","Whiteboard Marker",NULL
+73,"Whiteboard Marker 806","Whiteboard Marker",NULL
+74,"Whiteboard Marker 807","Whiteboard Marker",NULL
+75,"Whiteboard Marker 803","Whiteboard Marker",NULL
+76,"Whiteboard Marker 804","Whiteboard Marker",NULL
+77,"Whiteboard Marker 805","Whiteboard Marker",NULL
+78,"Whiteboard Marker 701","Whiteboard Marker",NULL
+79,"Whiteboard Marker 702","Whiteboard Marker",NULL
+81,"HDMI Cable",Visual,
+86,"401 Access Card",Security,
+89,"Shure Mic SM57",Audio,Sm57
+90,"HopeKids Ipad 2",Hopekids,
+91,"Security TL Access card",,"Security team"
+92,"C806 HSM1",,
+95,"CT Hub Access Card","Access Card",
+96,"Ablaze Offerings Bag",,
+97,"701 HDMI dongle",,
+98,"702 HDMI Dongle",,
+99,"Cooler Box 1",,
+100,"Cooler Box 2",,
+101,"Level 8 access key",,
+102,"Key 40: Tithing Box Key (Hopekids)",,
+103,"Connect 8 HK Keys",Keys,Keys
+104,"Connect 8 Facilities Storage ","Facilities ","L8 Storage Key"
+105,"Extension Plug",,
+106,"Loud Hailer",,

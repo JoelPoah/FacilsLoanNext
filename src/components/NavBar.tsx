@@ -45,10 +45,9 @@ export default function NavBar({ isSignedIn }: { isSignedIn: boolean }) {
       label: "Home",
     },
     {
-      href: "/add",
-      label: "Add Title",
-      loggedIn: true,
-    },
+      href:"/item",
+      label:"Items",
+    }
   ];
 
   const routes = defaultRoutes.filter(

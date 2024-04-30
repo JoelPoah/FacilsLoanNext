@@ -1,26 +1,35 @@
 import Image from "next/image";
 import { cookieBasedClient, isAuthenticated } from "../utils/amplify-utils";
 import Post from "../components/Post";
-import {deletePost} from "@/src/app/_actions/actions";
+
+import Table from "@/src/components/Table";
 
 export default async function Home() {
-
-  
-  const { data: posts } = await cookieBasedClient.models.Post.list({
-    selectionSet: ["title", "id"],
+  const {data:items} = await cookieBasedClient.models.Item.list({
+    selectionSet: ["Name", "Category"],
     authMode: "apiKey",
   });
 
-  console.log("post: ", posts);
+  // console.log("Response: ", response);
+
+
+  // const items = response.data.listItems.items.filter(item => item !== null);
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 w-1/2 m-auto">
-      <h1 className="text-xl  m-auto">List of all titles</h1>
-      {posts?.map(async (post, idx) => (
+    <div className="bg-white h-screen">
+      <Table />
 
-      <Post key={idx} idx={idx} onDelete={deletePost} post={post} isSignedIn={ await isAuthenticated()}/>
+      {items?.map(async (item, idx) => (
+        <h1>
+          {item.Name}
+          {item.Category}
+        </h1>
+))}
+    </div>
 
-      ))}
-    </main>
+    // <main className="flex min-h-screen flex-col items-center justify-between p-24 w-1/2 m-auto">
+    //   <h1 className="text-xl  m-auto">List of all titles</h1>
+
+    // </main>
   );
 }

@@ -1,5 +1,6 @@
 import { type ClientSchema, a, defineData } from "@aws-amplify/backend";
 import { post } from "aws-amplify/api";
+import { describe } from "node:test";
 import { title } from "process";
 
 /*== STEP 1 ===============================================================
@@ -43,27 +44,50 @@ specifies that any user authenticated via an API key can "create", "read",
 
 // })
 
+// const schema = a.schema({
+//   Comment: a
+//     .model({
+//       content: a.string().required(),
+//       postId: a.id(),
+//       post: a.belongsTo("Post", "postId"),
+//     })
+//     .authorization((allow) => [
+//       allow.publicApiKey().to(["read"]),
+//       allow.owner(),
+//     ]),
+//   Post: a
+//     .model({
+//       title: a.string().required(),
+//       comments: a.hasMany("Comment", "postId"),
+//     })
+//     .authorization((allow) => [
+//       allow.publicApiKey().to(["read"]),
+//       allow.owner(),
+//     ]),
+// });
+
 const schema = a.schema({
-  Comment: a
-    .model({
-      content: a.string().required(),
-      postId: a.id(),
-      post: a.belongsTo("Post", "postId"),
-    })
-    .authorization((allow) => [
-      allow.publicApiKey().to(["read"]),
-      allow.owner(),
-    ]),
-  Post: a
-    .model({
-      title: a.string().required(),
-      comments: a.hasMany("Comment", "postId"),
-    })
-    .authorization((allow) => [
-      allow.publicApiKey().to(["read"]),
-      allow.owner(),
-    ]),
-});
+
+  BookingCart: a.model({
+  bookingId:a.id().required(),
+  itemId:a.id().required(),
+  Item: a.belongsTo('Item','itemId'),
+  Booking: a.belongsTo('Booking','bookingId'),
+  }).authorization((allow) =>[allow.publicApiKey().to(["read"]),allow.owner()]),
+  Item:a.model({
+  Name:a.string().required(),
+  Category:a.string(),
+  description:a.string(),
+  Bookings: a.hasMany('BookingCart','itemId')
+  }).authorization((allow) =>[allow.publicApiKey().to(["read"]),allow.owner()]),
+  Booking:a.model({ 
+  Name: a.string().required(),
+  Phone: a.string().required(),
+  Items: a.hasMany('BookingCart','itemId'),
+  Returned: a.boolean().default(false)
+  }).authorization((allow) =>[allow.publicApiKey().to(["read"]),allow.owner()])
+  })
+
 
 // const schema = a.schema({
 //   Post: a

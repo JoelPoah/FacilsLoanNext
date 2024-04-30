@@ -3,18 +3,19 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: 255,255,255; /* Lighter text color */
+  --background-start-rgb: 17 24 39; /* Lighter starting background color */
+  --background-end-rgb: 17 24 39; /* Lighter ending background color */
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --foreground-rgb: 255, 255, 255; /* Dark text color */
+    --background-start-rgb: 135, 76, 204; /* Dark starting background color */
+    --background-end-rgb: 16, 67, 159; /* Dark ending background color */
   }
 }
+
 
 body {
   color: rgb(var(--foreground-rgb));
